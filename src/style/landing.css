@@ -1,0 +1,121 @@
+
+
+.landing-wrapper{
+    background: var(--primary-background);
+    height: 80vh;
+}
+.landing-wrapper section{
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+    align-items: center;
+}
+
+section .left-section{
+    margin-bottom: 5rem;
+    z-index: 3;
+}
+
+section .left-section .content{
+    margin-top: 2rem;
+}
+section .left-section .title span{
+    font-size: xx-large;
+    font-weight: 600;
+   
+}
+
+section .left-section .circle img{
+    position: absolute;
+    height: 300px;
+    left: 30%;
+    top: 26%;
+    z-index: -1;
+
+}
+
+section .right-section img{
+    height: 350px;
+}
+
+section .bottom-section .project-no{
+    position: absolute;
+    top: 70%;
+    left: 8%;
+    padding: 10px;
+    background : var(--button-back);
+    border-radius: 12px;
+    /* border: 2px solid red; */
+}
+
+section .bottom-section a{
+    position: absolute;
+    text-decoration: none;
+    color: #000;
+    top: 75%;
+    left: 40%;
+    padding: 15px 25px;
+    background: var(--button-back);
+    border-radius: 12px;
+    border: 2px solid var(--button-border);
+    font-size: large;
+    font-weight: 700;
+    transition: all .5s ease-in-out;
+}
+
+section .bottom-section a:hover{
+    background: var(--button-border);
+    border: 2px solid var(--button-back);
+
+}
+@media only screen and (max-width: 400px) {
+  
+    section .left-section .circle img{
+        display: none;
+    }
+
+    section {
+        flex-direction: column-reverse;
+    }
+    section .left-section .title span{
+        font-size: 20px;
+        font-weight: 550;
+        text-align: center;
+       
+    }
+    section .left-section{
+        margin-bottom: 40px;
+    }
+    section .right-section img{
+        width: 70%;
+        height: 300px;
+        margin-right: 50px;
+    }
+    .landing-wrapper{
+        background: var(--primary-background);
+        height: 100%;
+       
+        
+    }
+    .landing-wrapper section{
+        display: flex;
+        justify-content: space-around;
+        height: 80vh;
+        align-items: center;
+    }
+    
+
+    section .bottom-section .project-no{
+        top: 88%;
+        left: 8%;
+    }
+
+    section .bottom-section a{
+        top: 88%;
+        left: 45%;
+    }
+
+    section .left-section .content{
+        margin-top: 2px;
+    }
+  }

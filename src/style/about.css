@@ -1,0 +1,60 @@
+.aboutPage{
+    background: var(--primary-background);
+    height: 80vh;
+}
+
+.aboutPage section{
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+    align-items: center;
+}
+
+.aboutPage section .mydescription h1{
+
+font-size: 45px;
+}
+
+.aboutPage section .mydescription p{
+    font-size: 20px;
+}
+
+.aboutPage section .myimg img{
+    position: absolute;
+    top: -15%;
+    left: 65%;
+    height: 600px;
+    /* margin-top: 40px; */
+    margin-right: 60px;
+}
+
+
+
+
+/* For Mobile Devices */
+@media only screen and (max-width: 400px){
+    .aboutPage section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .aboutPage section .myimg{
+        position:relative;
+        margin-right: 200px;
+    }
+
+    .aboutPage section .myimg img{
+        height: 300px;
+    }
+    .aboutPage section .mydescription h1{
+
+        font-size: 25px;
+        font-weight: 550;
+        }
+        
+        .aboutPage section .mydescription p{
+            font-size: 15px;
+        }
+}

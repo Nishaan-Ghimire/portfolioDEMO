@@ -1,0 +1,13 @@
+*{
+box-sizing: border-box;
+/* overflow: hidden; */
+}
+
+@import url('./style/nav.css');
+@import url('./style/landing.css');
+@import url('./style/footer.css');
+@import url('./style/about.css');
+@import url('./style/skills.css');
+@import url('./style/contact.css');
+@import url('./style/card.css');
+@import url('./style/data.css');

@@ -1,0 +1,51 @@
+
+.skillsPage {
+    background: var(--primary-background);
+    height: 80vh;
+}
+
+.skillsPage section {
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+    align-items: center;
+}
+
+.skillsPage section .dev img {
+    height: 200px;
+}
+
+.skillsPage section .design img {
+    height: 200px;
+    /* margin-bottom:  */
+}
+
+.skillsPage section .dev,
+.skillsPage section .design {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.skillsPage section .dev span,
+.skillsPage section .design span {
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 400px)
+{
+
+    .skillsPage section .design img {
+        height: 150px;
+        width: 150px;
+    }
+    .skillsPage section .dev img {
+        height: 150px;
+        width: 150px;
+        margin-left: 30px;
+    }
+
+
+}

@@ -1,0 +1,78 @@
+@import url('./_variables.css');
+
+nav{
+   background-color: var(--nav-back);
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   border-bottom: 2px solid var(--button-border);
+
+}
+nav .logo{
+    cursor: pointer;
+    margin-right: 0rem;
+    
+}
+nav .logo img{
+   height: 50px;
+}
+
+
+ nav .links ul{
+    display: flex;
+    margin-right: 20rem;
+
+ }
+
+ nav .links ul li{
+    list-style: none;
+    margin: .5rem 2rem;
+ }
+
+ nav .links ul li a{
+    text-decoration: none;
+    color: black;
+ }
+nav a.toggleBtn{
+width: 35px;
+height: 30px;
+display: none;
+position: absolute;
+top: 2%;
+right: 5%;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+
+
+}
+
+nav a.toggleBtn .bar{
+   background: #000;
+   width: 100%;
+   height: 5px;
+
+}
+
+@media only screen and (max-width: 400px) {
+   nav a.toggleBtn{
+      display: flex;
+   }
+
+   nav .links .active{
+      display: none;
+   }
+   nav{
+      flex-direction: column;
+      justify-content: flex-end;
+   }
+
+   nav .links ul{
+      margin-right: 6px;
+      flex-direction: column;
+   }
+   nav .links ul li{
+      margin: .5rem 1rem;
+   }
+}
